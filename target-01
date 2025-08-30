@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pattern Recreation</title>
+  <style>
+    body {
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #111;}
+    .canvas {
+      position: relative;
+      width: 400px; 
+      height: 300px;
+      background: #F1E1BE;}
+    .block { position: absolute; background: #7C7565; }
+    .left {
+      top: 0;
+      left: 0;
+      width: 70px;
+      height: 270px;  }
+    .right {
+      top:30px;    
+      right: 0;
+      width: 70px;
+      height:900px; }
+    .top {
+      top: 0;
+      left: 0;
+      width: 200px;
+      height: 30px;}
+    .bottom {
+      bottom: 0;
+      left: 200px;
+      width: 150px;
+      height: 30px; }
+    .center-square {
+      width: 89px;
+      height: 89px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      position: absolute;
+      background: #7C7565; }
+  </style>
+</head>
+<body>
+  <div class="canvas">
+    <div class="block left"></div>
+    <div class="block right"></div>
+    <div class="block top"></div>
+    <div class="block bottom"></div>
+    <div class="center-square"></div>
+  </div>
+</body>
+</html>
